@@ -24,3 +24,9 @@ Catatan:
 8. Catatan harga menyebut bahwa tiket masuk taman nasional dan biaya resmi lain tidak selalu termasuk.
 9. Label kecil di atas judul rute yang sama persis dengan judulnya (Half Day Trip, dst.) disembunyikan; tab di ponsel tetap memakai label itu.
 10. Footer mendukung info usaha lewat kontak.json (email, Instagram, alamat, izin usaha). Kosong = tidak tampil.
+
+## Foto sampul Half Day dan terjemahan detail paket
+
+1. Foto sunset "Cahaya Rizky" menjadi sampul kartu Half Day dan foto pertama di galeri detail (file halfday-user-cover-sunset.webp, diperkecil ke lebar 1600 px, sekitar 148 KB). Data di kapal.json sebelumnya masih memakai foto lama, sehingga foto ini tidak tampil di situs.
+2. kapal.json kini memiliki terjemahan Prancis (tr.fr) dan Arab (tr.ar) untuk keempat paket: deskripsi, spesifikasi, jadwal, fasilitas, ketentuan, dan FAQ. Sebelumnya halaman fr dan ar kembali ke teks Inggris setelah kapal.json dimuat.
+3. Jika paket diubah lewat admin, pastikan admin tidak menghapus tr.fr dan tr.ar dari kapal.json.
