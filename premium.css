@@ -400,3 +400,5 @@ footer.foot { border-top: 1px solid rgba(226, 199, 143, .2); }
     color: #fff;
   }
 }
+
+.eyebrow[hidden]{display:none!important}

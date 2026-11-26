@@ -10,7 +10,8 @@
   const labels = {
     id: 'Pilih rute perjalanan', en: 'Choose an itinerary', de: 'Reiseroute wählen',
     es: 'Elige un itinerario', it: 'Scegli l’itinerario', ms: 'Pilih laluan perjalanan',
-    pt: 'Escolha o itinerário', ru: 'Выберите маршрут', zh: '选择行程路线'
+    pt: 'Escolha o itinerário', ru: 'Выберите маршрут', zh: '选择行程路线',
+    fr: 'Choisissez un itinéraire', ar: 'اختر مسار الرحلة'
   };
   tablist.className = 'route-tabs';
   tablist.setAttribute('role', 'tablist');
@@ -27,6 +28,7 @@
     tab.id = tabId;
     tab.setAttribute('role', 'tab');
     tab.setAttribute('aria-controls', panelId);
+    if (eyebrow && heading && eyebrow.textContent.trim() === heading.textContent.trim()) eyebrow.hidden = true;
     tab.textContent = (eyebrow && eyebrow.textContent.trim()) || (heading && heading.textContent.trim()) || `Route ${index + 1}`;
     slide.id = panelId;
     slide.setAttribute('role', 'tabpanel');
